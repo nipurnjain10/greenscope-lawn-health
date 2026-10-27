@@ -1,0 +1,76 @@
+{
+  "created_at_utc": "2026-10-22T12:35:19+00:00",
+  "python_version": "3.14.7",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "streamlit": "1.66.1",
+    "plotly": "7.1.0",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "python-docx": "1.2.0",
+    "python-pptx": "1.0.2",
+    "pytest": "9.1.1"
+  },
+  "generator_version": "1.1.0",
+  "dataset_fingerprint_main": "ba7d7d34021d07de58fd70da2263771119e61aad71b81488755452ef9d212415",
+  "dataset_fingerprint_robustness": "af95ba83862739ed06db62024262400dd818ed90498c6caacd57fb1f4da5524e",
+  "label_noise_sd": 0.15,
+  "class_thresholds": {
+    "low_lt": 0.7157866665479233,
+    "high_ge": 1.9668605197596127
+  },
+  "split_seed": 42,
+  "split_counts": {
+    "train": 7000,
+    "validation": 1500,
+    "test": 1500,
+    "robustness": 2000
+  },
+  "feature_columns": [
+    "lawn_area_m2",
+    "grass_type",
+    "sunlight_hours_per_day",
+    "soil_texture",
+    "foot_traffic_level",
+    "soil_ph",
+    "nitrogen_mg_kg",
+    "phosphorus_mg_kg",
+    "potassium_mg_kg",
+    "soil_moisture_pct",
+    "drainage_score",
+    "soil_compaction_score",
+    "temperature_c",
+    "humidity_pct",
+    "rainfall_7d_mm",
+    "irrigation_sessions_per_week",
+    "mowing_sessions_per_month",
+    "days_since_last_service",
+    "discoloration_pct",
+    "bare_patch_pct",
+    "wilting_score",
+    "thatch_thickness_mm",
+    "weed_cover_pct"
+  ],
+  "class_order": [
+    "Low",
+    "Moderate",
+    "High"
+  ],
+  "model_files": {
+    "logistic_regression": "models/logistic_regression.joblib",
+    "random_forest": "models/random_forest.joblib",
+    "gradient_boosting": "models/gradient_boosting.joblib",
+    "svm_rbf": "models/svm_rbf.joblib"
+  },
+  "hyperparameters": {
+    "logistic_regression": "L2 logistic regression, C=1, lbfgs, scaled numeric inputs",
+    "random_forest": "200 trees, max_depth=10, min_samples_leaf=8, max_features=sqrt",
+    "gradient_boosting": "300 trees, learning_rate=0.05, max_depth=3, subsample=0.85. A validation-only grid preferred this over 150 trees at learning rate 0.08. The test set was not part of that choice.",
+    "svm_rbf": "RBF kernel, C=1, gamma=scale. Class probabilities come from CalibratedClassifierCV with sigmoid method, cv=3, and ensemble=False, fit on the training rows only.",
+    "voting": "Soft voting only. Equal weights. The class is the largest mean probability. Weights were not tuned on the test set."
+  },
+  "protocol": "Hyperparameters were pre-specified. Validation metrics use a fit on the training split only. Final models are refit on training plus validation and then scored once on the test split and on the separate robustness file. Permutation importance, calibration statistics, bootstrap intervals, and ablation use those final predictions. None of those evaluation steps changes the saved predictions."
+}
