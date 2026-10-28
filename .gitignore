@@ -1,7 +1,12 @@
 .venv/
+venv/
+env/
 __pycache__/
+*.py[cod]
 .pytest_cache/
-.matplotlib/
-*.pyc
 .DS_Store
+__MACOSX/
+*.zip
+.env
+.streamlit/secrets.toml
 output/

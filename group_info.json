@@ -1,45 +1,45 @@
 {
-  "group_number": "[Group number]",
+  "group_number": "6",
   "course": "M.Tech Computer Science and Engineering",
   "institute": "Indian Institute of Technology Roorkee",
-  "semester": "[Semester]",
-  "instructor": "[Instructor name]",
-  "submission_date": "[Submission date]",
+  "semester": "1",
+  "instructor": "Professor Durga Toshniwal",
+  "submission_date": "27.10.2026",
   "members": [
     {
-      "name": "[Member 1 name]",
-      "enrollment": "[Enrollment number]",
+      "name": "Anurag Singh",
+      "enrollment": "26535004",
       "proposed_role": "Data sources and synthetic data",
-      "contribution": "[Replace with this member's confirmed contribution in one or two sentences.]",
-      "report_location": "Sections 7–9. Confirm the printed page numbers after pagination."
+      "contribution": "Created and checked the synthetic dataset, explored the data, explained the features, and prepared the data for model training.",
+      "report_location": "Confirming the printed page numbers after pagination."
     },
     {
-      "name": "[Member 2 name]",
-      "enrollment": "[Enrollment number]",
+      "name": "Shravan Jat",
+      "enrollment": "26535030",
       "proposed_role": "Logistic regression, random forest, and preprocessing",
-      "contribution": "[Replace with this member's confirmed contribution in one or two sentences.]",
-      "report_location": "Sections 10–12. Confirm the printed page numbers after pagination."
+      "contribution": "Built the Logistic Regression pipeline, including data preparation, training, and testing. Reported the baseline results and prepared model-comparison charts.",
+      "report_location": "Confirming the printed page numbers after pagination."
     },
     {
-      "name": "[Member 3 name]",
-      "enrollment": "[Enrollment number]",
+      "name": "Nipurn Jain",
+      "enrollment": "26535020",
       "proposed_role": "Gradient boosting, SVM, voting, and ablation",
-      "contribution": "[Replace with this member's confirmed contribution in one or two sentences.]",
-      "report_location": "Sections 12–13 and 18. Confirm the printed page numbers after pagination."
+      "contribution": "Built the Gradient Boosting model, selected its settings using validation results, checked prediction errors, and tested the model on a second dataset.",
+      "report_location": "Confirming the printed page numbers after pagination."
     },
     {
-      "name": "[Member 4 name]",
-      "enrollment": "[Enrollment number]",
+      "name": "Viram Shah",
+      "enrollment": "26535027",
       "proposed_role": "Evaluation, robustness, and explainability",
-      "contribution": "[Replace with this member's confirmed contribution in one or two sentences.]",
-      "report_location": "Sections 14–18. Confirm the printed page numbers after pagination."
+      "contribution": "Built the SVM model using an RBF kernel, calibrated its probabilities, combined the models using soft voting, and tested the ensemble in the application.",
+      "report_location": "Confirming the printed page numbers after pagination."
     },
     {
-      "name": "[Member 5 name]",
-      "enrollment": "[Enrollment number]",
+      "name": "Varun Chaudhary",
+      "enrollment": "26535033",
       "proposed_role": "Application, recommendations, and cost estimation",
-      "contribution": "[Replace with this member's confirmed contribution in one or two sentences.]",
-      "report_location": "Sections 19–21. Confirm the printed page numbers after pagination."
+      "contribution": "Built the Random Forest model, chose its settings, checked errors for each class, and studied which features were most important.",
+      "report_location": "Confirming the printed page numbers after pagination."
     }
   ]
 }

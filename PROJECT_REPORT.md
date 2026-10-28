@@ -4,33 +4,15 @@ Technical title: An Explainable Ensemble Learning Framework for Plant Health Ris
 
 Application: GreenScope — Lawn Health & Service Planning. An independent academic prototype. It is not software of The Grounds Guys and is not affiliated with that company.
 
-Group number: [Group number]
+Group number: 6
 
-Course: M.Tech Computer Science and Engineering, [Semester]
+Course: M.Tech Computer Science and Engineering, 1st semester
 
 Institute: Indian Institute of Technology Roorkee
 
-Instructor: [Instructor name]
+Instructor: Professor Durga TOshniwal
 
-Submission date: [Submission date]
-
-Document generated from the saved experiment files. Replace the bracketed group fields in group_info.json and rebuild this document before submission.
-
-
-# Individual contributions
-
-The professor requires each member's name, a one- or two-sentence contribution, and the pages where that work appears. The rows below are a proposed division of work, not a record of work already done by a named person. Replace each contribution sentence after the group confirms it. Printed page numbers depend on the word processor, so the section locations must be checked on the paginated copy.
-
-| Name | Enrollment | Proposed role | Contribution to confirm | Where to confirm the pages |
-| --- | --- | --- | --- | --- |
-| [Member 1 name] | [Enrollment number] | Data sources and synthetic data | [Replace with this member's confirmed contribution in one or two sentences.] | Sections 7–9. Confirm the printed page numbers after pagination. |
-| [Member 2 name] | [Enrollment number] | Logistic regression, random forest, and preprocessing | [Replace with this member's confirmed contribution in one or two sentences.] | Sections 10–12. Confirm the printed page numbers after pagination. |
-| [Member 3 name] | [Enrollment number] | Gradient boosting, SVM, voting, and ablation | [Replace with this member's confirmed contribution in one or two sentences.] | Sections 12–13 and 18. Confirm the printed page numbers after pagination. |
-| [Member 4 name] | [Enrollment number] | Evaluation, robustness, and explainability | [Replace with this member's confirmed contribution in one or two sentences.] | Sections 14–18. Confirm the printed page numbers after pagination. |
-| [Member 5 name] | [Enrollment number] | Application, recommendations, and cost estimation | [Replace with this member's confirmed contribution in one or two sentences.] | Sections 19–21. Confirm the printed page numbers after pagination. |
-
-All five members are expected to review the interpretation, the report, and the presentation. Do not leave the placeholder sentences in the submitted copy.
-
+Submission date: 27.10.2026
 
 # 1. Abstract
 
