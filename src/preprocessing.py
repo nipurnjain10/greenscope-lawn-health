@@ -44,16 +44,6 @@ def make_preprocessor(*, scale_numeric: bool) -> ColumnTransformer:
 
 
 def build_estimators() -> dict[str, Pipeline]:
-    """Four different classifiers with pre-specified hyperparameters.
-
-    The values were chosen for a student laptop and were not selected by
-    searching the final test set. A generator 1.0.0 validation pilot showed
-    that a deeper forest memorised training rows (about 0.96 train accuracy,
-    about 0.62 validation accuracy) because the label was not yet carried by
-    the observed features. The saved forest is therefore depth-limited.
-    Logistic regression and the SVM scale numeric inputs. The tree models do
-    not, because split thresholds are invariant to monotone scaling.
-    """
     logistic = Pipeline(
         [
             ("preprocess", make_preprocessor(scale_numeric=True)),
