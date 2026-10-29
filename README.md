@@ -2,8 +2,6 @@
 
 An explainable machine-learning decision-support prototype for landscaping operations.
 
-This is an independent M.Tech Computer Science and Engineering semester project. It is not software of The Grounds Guys and it is not affiliated with that company. The original course title uses a lawn-care chain as the business context for the problem. The application identity is GreenScope.
-
 **Independent academic prototype. Model development and evaluation use synthetic data; performance has not been validated on actual customer lawns.**
 
 ## What it does
@@ -43,7 +41,7 @@ pytest
 
 `MPLCONFIGDIR` keeps Matplotlib from writing its cache outside the project. The training script also sets it.
 
-Generation writes 10,000 primary rows and 2,000 robustness rows, then validates them. Training fits the four pipelines, scores the untouched test set once, and writes `reports/model_metrics.json`. The document command rebuilds the report and the presentation from those files. Do not edit the metrics by hand.
+Generation writes 10,000 primary rows and 2,000 robustness rows, then validates them. Training fits the four pipelines, scores the untouched test set once, and writes `reports/model_metrics.json`.
 
 ## Run the application
 
@@ -63,5 +61,3 @@ The app loads the saved models. It does not retrain when you change pages or run
 | `src/build_documents.py` | Report, presentation, and submission copies |
 | `HELP.md` | How to use the prototype |
 | `submission/` | Report, slides, dictionary, provenance, and contribution template |
-
-Group number, names, and enrollment numbers are placeholders in `group_info.json`. Edit that file and run `python -m src.build_documents` before submitting. Do not invent those details.
